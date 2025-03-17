@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Poppins Pro;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header__nav{
+    margin-left: auto;
+    padding-right: 24px;
+}
+
+.header__menu .menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav .nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.header__logo img {
+    height: 40px;
+}
+
+/* Bagian Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.hero__content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero__content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.hero__content p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hero__button {
+    display: inline-block;
+    background-color: #e46036;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.hero__button:hover {
+    background-color: #e46036;
+}
+
+.hero__image {
+    max-width: 33%;
+}
+
+.kart-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Review Section */
+.review {
+    background: #e46036; 
+    color: black; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.review__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.review__value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.review__list {
+    display: flex;
+    gap: 5px;
+}
+
+.review__list-item {
+    color: black; 
+    font-size: 24px;
+}
+
+.review__source {
+    font-size: 18px;
+    color: black;
+}
+
+/* Section about */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 60px;
+    position: relative;
+    background-color: #F7F6F4;
+}
+
+.about__border {
+    width: 80px;
+    height: 100%;
+    background-image: url('border-image.png'); /* Ganti dengan path gambar */
+    background-size: contain;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 0;
+}
+
+.about__border--left {
+    left: 0;
+}
+
+.about__border--right {
+    right: 0;
+}
+
+/* Text Content */
+.about__content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.about__content-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about__content-text {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Image Section */
+.about__image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Play Button Overlay */
+.about__image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    cursor: pointer;
+}
+
+.about__image-overlay i {
+    color: white;
+    font-size: 24px;
+}
+
+/* Section benefit */
+body {
+    font-family: Poppins, Poppins;
+    background-color: #F7F6F4;
+    text-align: center;
+    background-image: linear-gradient(180deg, #F7F6F4, #ffffff);
+}
+
+.benefits {
+    padding: 40px;
+}
+
+.benefits__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.benefit {
+    background-color: #f1ede5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit__icon-container {
+    background-color: #e46036;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-items: center;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.benefit__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.benefit__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.benefit__text {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Section Testimonial */
+.testimonials {
+    padding: 40px;
+}
+
+.testimonials__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testimonials__grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #e46036;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 250px;
+    color: #000000;
+}
+
+.testimonial__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial__name {
+    font-size: 18px;
+    font-weight: regular;
+}
+
+.testimonial__position {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.testimonial__text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* FAQ Section */
+.faq {
+    position: relative;
+    background: #ffffff;
+    padding: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.faq__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling Judul FaQ */
+.faq__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* FAQ Content */
+.faq__content {
+    text-align: left;
+}
+
+.faq__item {
+    margin-bottom: 20px;
+}
+
+.faq__item h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq__item p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* CTA Section */ 
+.cta-footer {
+    background: #f1ede5;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.cta-button {
+    background-color: #e46036;
+    color: white;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Footer Section */
+footer {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
