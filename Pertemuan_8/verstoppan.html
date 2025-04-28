@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Kart Journey</title>
+    <link rel="stylesheet" href="tito.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-white text-white p-3">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <!-- <--TombolMenu-->
+                <div class="dropdown d-block">
+                  <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    &#9776;
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Features</a></li>
+                    <li><a class="dropdown-item" href="#">Media</a></li>
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow-1"></div>
+
+                 <!-- Navbar -->
+                  <nav class="me-3 d-none d-md-block">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-black" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#">Media</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#">News</a></li>
+                    </ul>
+                  </nav>
+
+                <!-- Logo -->
+                 <div>
+                    <img src="bendera.jpg" alt="Racing Flag" class="img-fluid" style="max-height: 40px;">
+                 </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bold">Join the <br> Go-Kart journey here.</h1>
+                    <p class="lead">Search the knowledge about Go-kart enthusiast.</p>
+                    <button class="btn custom-btn-orange">Book Now</button>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="cover.jpg" alt="Gokart Racing" class="img-fluid rounded"  style="max-height: 550px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-2 bg-orange-custom">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                <div class="display-6 fw-bold text-white">5</div>
+
+                <div>
+                    <span class="text-warning fs-4">★</span>
+                    <span class="text-warning fs-4">★</span>
+                    <span class="text-warning fs-4">★</span>
+                    <span class="text-warning fs-4">★</span>
+                    <span class="text-warning fs-4">★</span>
+                </div>
+
+                <div class="text-muted fs-5">Google Review</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About -->
+   <section class="py-5 position-relative section-bg" style="overflow: hidden;">
+    <img src="elemen2.jpg" alt="left border" class="position-absolute top-0 start-0 h-100 d-none d-md-block" style="z-index: 0;">
+    <img src="kotak.png" alt="right border" class="position-absolute top-0 end-0 h-100 d-none d-md-block" style="z-index: 0;">
+
+    <div class="container position-relative px-4 px-md-5" style="z-index: ;">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <h2 class="fw-bold">Who Are We?</h2>
+                <p class="lead">A motorsport partnership for GoKart Championship in Yogyakarta.</p>
+            </div>
+
+            <div class="col-md-6 position-relative text-center">
+                <img src="video.jpg" alt="gokart racing" class="img-fluid rounded shadow">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <img src="yt.png" alt="play button" style="width: 80px; cursor: pointer;" onclick="window.open('youtu.be/o4QXiKLv9yo?si=5JHD6FWyOSax4w7f');">
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+    <!-- Section benefit -->
+    <section class="py-5 section-bg-gradient">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold">Key Benefits / Feature</h2>
+      
+          <div class="row g-4">
+      
+            <!-- Benefit Item -->
+            <div class="col-md-4">
+              <div class="text-center p-4 border rounded h-100 shadow-sm bg-white-custom">
+                <img src="activity.png" alt="Performance Icon" class="mb-3 border border-orange rounded-3 p-2" style="height: 50px;">
+                <h5 class="fw-bold">Performance & Optimization</h5>
+                <p class="text-italic">Enhancing vehicle performance through optimal tuning and effective race strategies.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="text-center p-4 border rounded h-100 shadow-sm bg-white-custom">
+                <img src="award.png" alt="Driver Icon" class="mb-3 border-orange rounded-3 p-2" style="height: 50px;">
+                <h5 class="fw-bold">Driver Development</h5>
+                <p class="text-italic">Improving driver skills through racing techniques and competitive strategies.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="text-center p-4 border rounded h-100 shadow-sm bg-white-custom">
+                <img src="pin.png" alt="Track Icon" class="mb-3 border border-orange rounded-3 p-2" style="height: 50px;">
+                <h5 class="fw-bold">Track Mastery & Navigation</h5>
+                <p class="text-italic">Understanding track characteristics and determining the best racing line for the fastest lap times.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="text-center p-4 border rounded h-100 shadow-sm bg-white-custom">
+                <img src="navigation.png" alt="Team Icon" class="mb-3 border-orange rounded p-2" style="height: 50px;">
+                <h5 class="fw-bold">Team Communication & Strategy</h5>
+                <p class="text-italic">Enhancing team coordination for effective race strategies and efficient pit stops.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="text-center p-4 border rounded h-100 shadow-sm bg-white-custom">
+                <img src="save.png" alt="Maintenance Icon" class="mb-3 border-orange rounded-3 p-2" style="height: 50px;">
+                <h5 class="fw-bold">Kart Maintenance & Technical Setup</h5>
+                <p class="text-italic">Ensuring the kart remains in top condition through regular maintenance and proper setup.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="text-center p-4 border rounded h-100 shadow-sm bg-white-custom">
+                <img src="shield.png" alt="Safety Icon" class="mb-3 border-orange rounded-3 p-2" style="height: 50px;">
+                <h5 class="fw-bold">Safety & Protection</h5>
+                <p class="text-italic">Ensuring driver safety through high protection standards and strict racing regulations.</p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+    
+      <section class="py-5 bg-white">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold">Customer Testimonials</h2>
+      
+          <div class="row g-4">
+      
+            <!-- Testimonial 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm text-center p-3 border-0 bg-orange">
+                <img src="umar.jpg" class="rounded-circle mx-auto mb-3" alt="Umar Alex" style="width: 80px; height: 80px; object-fit: cover;">
+                <h5 class="fw-bold">Umar Alex</h5>
+                <p class="fw-bold">Gadjah Mada University</p>
+                <p class="text-italic">“Such a great experience with this Go-Kart Academy!”</p>
+              </div>
+            </div>
+      
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm text-center p-3 border-0 bg-orange">
+                <img src="sainz.webp" class="rounded-circle mx-auto mb-3" alt="Carlos Sainz" style="width: 80px; height: 80px; object-fit: cover;">
+                <h5 class="fw-bold">Carlos Sainz</h5>
+                <p class="fw-bold">Red Bull Academy</p>
+                <p class="text-italic">“This track layout, coaching, and telemetry analysis helped me improve my lap time. Highly recommended!”</p>
+              </div>
+            </div>
+      
+            <!-- Testimonial 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm text-center p-3 border-0 bg-orange">
+                <img src="leclerc.jpg" class="rounded-circle mx-auto mb-3" alt="Charles Leclerc" style="width: 80px; height: 80px; object-fit: cover;">
+                <h5 class="fw-bold">Charles Leclerc</h5>
+                <p class="fw-bold">Bimasakti Racing Team</p>
+                <p class="text-italic">“Top-quality karts and a thrilling track. Can't wait to come back!”</p>
+              </div>
+            </div>
+      
+            <!-- Testimonial 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm text-center p-3 border-0 bg-orange">
+                <img src="max.jpg" class="rounded-circle mx-auto mb-3" alt="Max Verstappen" style="width: 80px; height: 80px; object-fit: cover;">
+                <h5 class="fw-bold">Max Verstappen</h5>
+                <p class="fw-bold">Formula Driver</p>
+                <p class="text-italic">“Perfect for families! Great safety measures and an exciting ride.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-5 position-relative text-white" style="background-image: url('back.jpg'); background-size: cover; background-position: center;">
+        <div class="container py-5 bg-dark bg-opacity-75 rounded">
+          <h2 class="text-center mb-5 fw-bold">Frequently Asked Questions</h2>
+      
+          <div class="accordion" id="faqAccordion">
+      
+            <!-- FAQ 1 -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                  1. Do I need prior experience to try go-karting?
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-white">
+                  No, beginners are welcome! Our staff will guide you on safety and basic driving techniques before you hit the track.
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ 2 -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                  2. What safety gear is required?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-white">
+                  We provide helmets and gloves. We recommend wearing closed-toe shoes and comfortable clothing.
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ 3 -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                  3. Are there age or height restrictions?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-white">
+                  Yes, minimum age and height requirements vary by track. Please check with us before booking.
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ 4 -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                  4. Do you offer training or coaching?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-white">
+                  Yes, we provide coaching for all skill levels, from beginners to competitive racers.
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ 5 -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="faq5">
+                <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                  5. What happens in case of bad weather?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-white">
+                  For outdoor tracks, sessions may be rescheduled. Indoor tracks operate as usual.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="py-5 bg-white-custom text-black text-center">
+        <div class="container">
+          <h2 class="mb-4 fw-bold">"Ready to Race?"<br>Book Your Session Now!</h2>
+          <button class="btn custom-btn-orange">Book Now</button>
+        </div>
+      </section>
+      
+    
+      <footer class="bg-white text-black py-5">
+        <div class="container text-center">
+          <div class="row">
+            
+            <!-- About company -->
+            <div class="col-md-4 mb-4 text-md-start">
+              <h5 class="fw-bold">About Company</h5>
+              <p>"SpeedRush Karting is the ultimate destination for adrenaline lovers! We offer high-performance go-karts, 
+              a professional track, and expert coaching to bring out the racer in you."</p>
+            </div>
+      
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+              <h5 class="fw-bold">Contact Information</h5>
+              <p>&#9993; Kartito@gmail.com</p>
+              <p>&#9742; (+62) 82259462290</p>
+              <p>&#128205; Jl. Godean Km. 5, Ambarketawang, Gamping, Sleman</p>
+            </div>
+      
+            <!-- Legal Pages -->
+            <div class="col-md-4 mb-4">
+              <h5 class="fw-bold">Legal Pages</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-black text-decoration-none">Terms of Use</a></li>
+                <li><a href="#" class="text-black text-decoration-none">Disclaimer</a></li>
+                <li><a href="#" class="text-black text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-black text-decoration-none">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
