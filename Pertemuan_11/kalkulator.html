@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 8px 16px;
+      margin: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 20px;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 8px 16px;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kalkulator JS</h1>
+  <div>
+    <button onclick="jumlah()">Penjumlahan</button>
+    <button onclick="kurang()">Pengurangan</button>
+    <button onclick="kali()">Perkalian</button>
+    <button onclick="bagi()">Pembagian</button>
+  </div>
+
+  <div id="output"></div>
+
+  <script>
+    function ambilInput() {
+      const satu = prompt("Masukkan bilangan pertama:");
+      const dua = prompt("Masukkan bilangan kedua:");
+      if (satu === null || dua === null) {
+        alert("Input dibatalkan.");
+        return null;
+      }
+
+      const num1 = parseFloat(satu);
+      const num2 = parseFloat(dua);
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("Input harus berupa angka!");
+        return null;
+      }
+
+      return [num1, num2];
+    }
+
+    function tampilkanTabel(judul, num1, num2, hasil) {
+      document.getElementById("output").innerHTML = `
+        <table>
+          <tr><th>Bilangan 1</th><th>Bilangan 2</th><th>${judul}</th></tr>
+          <tr><td>${num1}</td><td>${num2}</td><td>${hasil}</td></tr>
+        </table>
+        <p><strong>Hasil ${judul.toLowerCase()}:</strong> ${hasil}</p>
+      `;
+    }
+
+    function jumlah() {
+      const input = ambilInput();
+      if (!input) return;
+      const [num1, num2] = input;
+      tampilkanTabel("Penjumlahan", num1, num2, num1 + num2);
+    }
+
+    function kurang() {
+      const input = ambilInput();
+      if (!input) return;
+      const [num1, num2] = input;
+      tampilkanTabel("Pengurangan", num1, num2, num1 - num2);
+    }
+
+    function kali() {
+      const input = ambilInput();
+      if (!input) return;
+      const [num1, num2] = input;
+      tampilkanTabel("Perkalian", num1, num2, num1 * num2);
+    }
+
+    function bagi() {
+      const input = ambilInput();
+      if (!input) return;
+      const [num1, num2] = input;
+      if (num2 === 0) {
+        alert("Tidak bisa membagi dengan nol!");
+        return;
+      }
+      tampilkanTabel("Pembagian", num1, num2, num1 / num2);
+    }
+  </script>
+</body>
+</html>
